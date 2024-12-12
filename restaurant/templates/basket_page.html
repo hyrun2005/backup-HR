@@ -1,0 +1,102 @@
+{% extends 'includes/master_page_res.html' %}
+
+{% block title %}
+    Basket
+{% endblock %}
+
+{% block content %}
+
+<style>
+    .basket-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    .basket-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .basket-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .item-name {
+        font-weight: bold;
+    }
+
+    .item-price {
+        color: #555;
+    }
+
+    .delete-form {
+        margin: 0;
+    }
+
+    .delete-button {
+        background: #ff4d4d;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 1;
+    }
+
+    .delete-button:hover {
+        background: #ff1a1a;
+    }
+
+    .basket-actions {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .proceed-button {
+        background: #28a745;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+
+    .proceed-button:hover {
+        background: #218838;
+    }
+</style>
+<h2>Your Basket</h2>
+<div class="basket-container">
+    {% if basket %}
+        <ul class="basket-list">
+            {% for item in basket %}
+                <li class="basket-item">
+                    <span class="item-name">{{ item.dish.name }}</span> -
+                    <span class="item-price">${{ item.dish.price }} x {{ item.quantity }}</span>
+                    <form method="post" action="{% url 'delete_from_basket' item.dish.id %}" class="delete-form">
+                        {% csrf_token %}
+                        <button type="submit" class="delete-button">&times;</button>
+                    </form>
+                </li>
+            {% endfor %}
+        </ul>
+        <p><strong>Total:</strong> ${{ total_price }}</p>
+        <div class="basket-actions">
+            <a href="{% url 'order' %}" class="proceed-button">Proceed to Order</a>
+        </div>
+    {% else %}
+        <p>Your basket is empty.</p>
+    {% endif %}
+</div>
+
+
+{% endblock %}

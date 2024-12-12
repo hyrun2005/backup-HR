@@ -1,0 +1,23 @@
+{% extends 'includes/master_page_res.html' %}
+
+{% block title %}
+    Order Summary
+{% endblock %}
+
+{% block content %}
+<h2>Order Summary</h2>
+{% if basket %}
+    <ul>
+        {% for item in basket %}
+            <li>{{ item.name }} - ${{ item.price }}</li>
+        {% endfor %}
+    </ul>
+    <h3>Total: ${{ total_cost }}</h3>
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit">Confirm Order</button>
+    </form>
+{% else %}
+    <p>Your basket is empty.</p>
+{% endif %}
+{% endblock %}
