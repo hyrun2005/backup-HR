@@ -12,7 +12,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: vistula-online.pl
-        username: ${{ secrets.FTPUSERNAME }}
-        password: ${{ secrets.FTPPASSWORD }}
+        username: hotel@vistula-online.pl
+        password: MZu3N_TA
         protocol: ftps
         server-dir:
