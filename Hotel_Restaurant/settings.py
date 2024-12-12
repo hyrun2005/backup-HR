@@ -27,7 +27,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'accounts',
-    'restaurant'
+    'restaurant',
+    'payments'
 ]
 
 MIDDLEWARE = [
@@ -99,11 +100,6 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
-]
-
-INSTALLED_APPS = [
-    # Інші додатки
-    'payments',
 ]
 
 
