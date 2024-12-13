@@ -28,7 +28,7 @@ pip install -r requirements.txt
 # Run Django management commands
 
 echo "Collecting static files..."
-python manage.py collectstatic --noinput
+
 
 python manage.py runserver
 
