@@ -3,6 +3,7 @@ algoliasearch-django==3.0.0
 async-timeout==4.0.3
 daphne==4.1.2
 dj-database-url==2.3.0
+django==5.1.2
 django-allauth==0.61.1
 django-cors-headers==4.3.1
 django-phonenumber-field==8.0.0
