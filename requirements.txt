@@ -104,7 +104,6 @@ narwhals==1.13.3
 nest-asyncio==1.6.0
 networkx==3.3
 nltk==3.9.1
-numba==0.60.0
 numpy==1.26.4
 oauthlib==3.2.2
 openai-whisper==20240930
