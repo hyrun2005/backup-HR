@@ -25,15 +25,17 @@ echo "Installing dependencies..."
 pip install --upgrade pip
 pip install -r requirements.txt
 
+# Run Django management commands
+echo "Running Django migrations..."
+python manage.py migrate
+
 echo "Collecting static files..."
 python manage.py collectstatic --noinput
 
-# Install Waitress if not already installed
-echo "Installing Waitress..."
-pip install waitress
+py manage.py runserver
+
 
 # Start the Django application with Waitress
-echo "Starting the application with Waitress..."
-nohup waitress-serve --port=8000 Hotel_Restaurant.wsgi:application &
 
 echo "Application started successfully!"
+

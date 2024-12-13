@@ -34,6 +34,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -44,7 +45,7 @@ MIDDLEWARE = [
 STATICFILES_DIRS = [
     BASE_DIR / "static",  # Ensures Django knows where to look for your static files
 ]
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 ROOT_URLCONF = 'Hotel_Restaurant.urls'
@@ -70,6 +71,7 @@ WSGI_APPLICATION = 'Hotel_Restaurant.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # MySQL backend
@@ -80,7 +82,17 @@ DATABASES = {
         'PORT': '3306',                       # Default MySQL port
     }
 }
-
+"""
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',  # MySQL backend
+        'NAME': '39181854_hotel_restaurant',         # Name of your database
+        'USER': '39181854_hotel_restaurant',              # MySQL username
+        'PASSWORD': 'root',          # MySQL password
+        'HOST': 'localhost',                  # MySQL server host (use the IP if hosted remotely)
+        'PORT': '3306',                       # Default MySQL port
+    }
+}"""
 
 
 # Password validation
