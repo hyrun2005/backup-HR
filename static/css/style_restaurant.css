@@ -127,7 +127,7 @@ p {
     color: #f7c08a;
 }
 
-/* Showcase Styling */#showcase {
+#showcase {
     position: relative;
     background: url('../img/restaurant/Untitled_design.png') no-repeat center center/cover;
     height: 600px;
@@ -257,8 +257,11 @@ p {
 
 /* Main Footer */
 #main-footer {
+    margin-top: auto;
     text-align: center;
     background: #444;
     color: #fff;
     padding: 20px;
+    position:absolute;
+    bottom 0;
 }

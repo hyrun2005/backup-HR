@@ -9,7 +9,7 @@
 {% if basket %}
     <ul>
         {% for item in basket %}
-            <li>{{ item.name }} - ${{ item.price }}</li>
+            <li>{{ item.dish.name }} - ${{ item.dish.price }}</li>
         {% endfor %}
     </ul>
     <h3>Total: ${{ total_cost }}</h3>
