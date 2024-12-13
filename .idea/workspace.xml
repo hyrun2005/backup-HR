@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6aef27f2-025d-4025-9ecd-d95ac564a31c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Hotel_Restaurant.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/access.env" beforeDir="false" afterPath="$PROJECT_DIR$/access.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -99,7 +104,7 @@
       <workItem from="1733928784695" duration="6712000" />
       <workItem from="1733945181409" duration="13731000" />
       <workItem from="1734013661066" duration="28372000" />
-      <workItem from="1734081467731" duration="2697000" />
+      <workItem from="1734081467731" duration="2977000" />
     </task>
     <servers />
   </component>
