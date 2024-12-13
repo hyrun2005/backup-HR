@@ -27,12 +27,12 @@ pip install -r requirements.txt
 
 # Run Django management commands
 echo "Running Django migrations..."
-python manage.py migrate
+#python manage.py migrate
 
 echo "Collecting static files..."
 python manage.py collectstatic --noinput
 
-py manage.py runserver
+python manage.py runserver
 
 
 # Start the Django application with Waitress
