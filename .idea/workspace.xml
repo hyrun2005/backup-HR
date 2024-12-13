@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6aef27f2-025d-4025-9ecd-d95ac564a31c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel_Restaurant/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel_Restaurant/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +58,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/hyrun/Downloads/EcommerceSite-master",
+    "last_opened_file_path": "D:/Vistula/Vistula_Hotel_Bar/test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -85,7 +87,7 @@
       <workItem from="1733928784695" duration="6712000" />
       <workItem from="1733945181409" duration="13731000" />
       <workItem from="1734013661066" duration="28372000" />
-      <workItem from="1734081467731" duration="10399000" />
+      <workItem from="1734081467731" duration="12132000" />
     </task>
     <servers />
   </component>

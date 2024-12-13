@@ -71,28 +71,17 @@ WSGI_APPLICATION = 'Hotel_Restaurant.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',  # MySQL backend
-        'NAME': 'vistula',         # Name of your database
-        'USER': 'root',              # MySQL username
-        'PASSWORD': 'root',          # MySQL password
-        'HOST': 'localhost',                  # MySQL server host (use the IP if hosted remotely)
-        'PORT': '3306',                       # Default MySQL port
-    }
-}
-"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # MySQL backend
         'NAME': '39181854_hotel_restaurant',         # Name of your database
         'USER': '39181854_hotel_restaurant',              # MySQL username
-        'PASSWORD': 'root',          # MySQL password
-        'HOST': 'localhost',                  # MySQL server host (use the IP if hosted remotely)
-        'PORT': '3306',                       # Default MySQL port
+        'PASSWORD': 'vistula!1',          # MySQL password
+        'HOST': 'sql.serwer2407596.home.pl',                  # MySQL server host (use the IP if hosted remotely)
+        'PORT': '3380',                       # Default MySQL port
     }
-}"""
+}
+
 
 
 # Password validation
