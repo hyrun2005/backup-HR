@@ -30,8 +30,7 @@ pip install -r requirements.txt
 echo "Collecting static files..."
 
 
-python manage.py runserver
-
+waitress-serve --port=8000 Hotel_Restaurant.wsgi:application
 
 # Start the Django application with Waitress
 
