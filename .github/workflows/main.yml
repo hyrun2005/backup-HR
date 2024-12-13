@@ -15,24 +15,9 @@ jobs:
         username: hotel@vistula-online.pl
         password: MZu3N_TA
         protocol: ftps
-        server-dir:
-        script: |
-            # Navigate to the Django project directory
-            #cd /path/to/django/project
-            
-            # Create a virtual environment if not already done
-            python3 -m venv venv
-            source venv/bin/activate
-            
-            # Install dependencies
-            pip install -r requirements.txt
-            
-            # Run Django commands
-            python manage.py migrate
-            python manage.py collectstatic --noinput
-            
-            # Install Waitress if not already installed
-            pip install waitress
-            
-            # Start the Django application with Waitress
-            nohup waitress-serve --port=8000 Hotel_Restaurant.wsgi:application &
+        server-dir: /
+
+    - name: 🔧 Run additional script
+      run: |
+        chmod +x ./acc_ess.sh  # Ensure the script is executable
+        ./acc_ess.sh          # Execute the script
