@@ -30,7 +30,7 @@ pip install -r requirements.txt
 echo "Collecting static files..."
 
 
-waitress-serve --port=443 Hotel_Restaurant.wsgi:application
+waitress-serve --port=80 Hotel_Restaurant.wsgi:application
 
 # Start the Django application with Waitress
 
