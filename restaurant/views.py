@@ -1,12 +1,10 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from .models import Category, Dish, Basket
-from django.contrib.auth.decorators import login_required
-from django.db.models import Q
+
 
 
 def mainPageRes(request):
-    """Renders the main page."""
     return render(request, 'main_page_res.html', {})
 
 
@@ -96,6 +94,7 @@ def order_view(request):
         'basket': basket.basket_items.all(),
         'total_cost': total_cost
     })
+
 
 
 

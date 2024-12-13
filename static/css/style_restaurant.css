@@ -263,5 +263,13 @@ p {
     color: #fff;
     padding: 20px;
     position:absolute;
-    bottom 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#main-footer {
+    position: relative; /* Уникнення конфліктів з іншими стилями */
+    bottom: 0;
+    width: 100%; /* Футер завжди займатиме всю ширину */
+    margin-top: auto; /* Автоматичне розташування після основного контенту */
 }
